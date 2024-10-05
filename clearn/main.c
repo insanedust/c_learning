@@ -14,13 +14,14 @@ int main()
 
     do {
         print_menu();
-        scanf(" %d", &choice);
+        scanf("%d", &choice);
         switch (choice) {
             case 1: delete_by_index();
             break;
             case 2: merge_two_arrays();
             break;
             case 3: print_address_2d_array();
+            break;
             default: choice = 0;
             break;
         }
@@ -35,6 +36,7 @@ void print_menu() {
     printf("(3) Arrays - Print element address of 2D array\n");
     printf("(0) Exit\n");
     printf("option: ");
+    fflush(stdout);
 }
 
 int* populate_array(const int array_size) {
@@ -112,6 +114,7 @@ void merge_two_arrays() {
 }
 
 void print_address_2d_array() {
+    printf("\n");
     int array[3][5] = {
         {1,2,3,4,5},
         {6,7,8,9,10},
@@ -124,8 +127,6 @@ void print_address_2d_array() {
         }
     }
 
-
-
     for(int i = 0; i < 3; i++) {
         int* basePtr = &array[i][0];
         printf("\nbase address: %p\n", basePtr);
@@ -135,7 +136,5 @@ void print_address_2d_array() {
     }
 
     printf("\n");
-
-
 }
 
