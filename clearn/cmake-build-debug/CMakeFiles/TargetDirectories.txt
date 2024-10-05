@@ -1,0 +1,3 @@
+/Users/dustinbishop/dev/c_learning/clearn/cmake-build-debug/CMakeFiles/test.dir
+/Users/dustinbishop/dev/c_learning/clearn/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/dustinbishop/dev/c_learning/clearn/cmake-build-debug/CMakeFiles/rebuild_cache.dir
